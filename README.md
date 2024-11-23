@@ -2,6 +2,7 @@
 
 Veri setinin boyutu büyük olduğu için githuba eklenememiştir.
 Veri seti: https://www.kaggle.com/datasets/tarekmuhammed/patients-data-for-medical-field/data
+repo : https://www.kaggle.com/code/lknurylmaz/sa-l-k-durumu-ve-kalp-krizi-riski-eda-regresyon
 Veri seti aşağıdaki özellikleri içermektedir:
 
 PatientID : Her hasta için benzersiz tanımlayıcı.

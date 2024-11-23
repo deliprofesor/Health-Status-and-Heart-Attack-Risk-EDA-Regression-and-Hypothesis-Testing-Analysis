@@ -1,0 +1,1 @@
+# Sa-l-k-Durumu-ve-Kalp-Krizi-Riski-EDA-Regresyon-ve-Hipotez-Testi-Analizi

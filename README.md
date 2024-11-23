@@ -51,7 +51,7 @@ EDA aşamasında, veri setinin özelliklerini anlamak için temel istatistikler 
 # Hipotez Testi: BMI ve Kalp Krizi İlişkisi
 Hipotez testi yapılmıştır: Kalp krizi geçiren ve geçirmeyen kişilerin BMI ortalamaları arasında anlamlı bir fark olup olmadığı test edilmiştir.
 Bağımsız İki Örneklem T Testi (t-test) kullanılmıştır. Bu test, iki grup arasındaki ortalama farkının istatistiksel olarak anlamlı olup olmadığını test eder.
-T-testinin sonuçları (t-istatistiği ve p-değeri) hesaplanmış ve yorumlanmıştır. Eğer p-değeri 0.05'ten küçükse, gruplar arasındaki farkın anlamlı olduğu kabul edilir.
+T-testinin sonuçları (t-istatistiği ve p-değeri) hesaplanmış ve yorumlanmıştır.
 
 # Veri Görselleştirme
 Boxplot (kutu grafiği) ile kalp krizi geçiren ve geçirmeyen kişilerin BMI değerleri arasındaki fark görselleştirilmiştir. Bu grafik, her iki grubun BMI dağılımlarını göstererek aralarındaki olası farklılıkları görsel olarak ortaya koymuştur.
@@ -61,5 +61,4 @@ Boxplot, özellikle gruplar arasındaki medyan, çeyrekler ve uç noktaları gö
 Hipotez testinin sonucu ve görselleştirmeler kullanılarak BMI ile kalp krizi arasındaki ilişki değerlendirilmiştir. Eğer test sonucu anlamlı bir fark tespit etmişse, bu, BMI'nin kalp krizi riskiyle ilişkili olabileceği anlamına gelir.
 
 # Model Geliştirme ve Sonuçların Kullanımı
-Bu aşamada, BMI verisinin ve diğer değişkenlerin, kalp krizi riskini tahmin etmek için nasıl kullanılabileceği üzerine düşünülebilir. Örneğin, regresyon analizleri veya sınıflandırma modelleri geliştirilebilir.
-Sonuçlar, sağlık risklerini anlamada ve önleyici tedbirlerin alınmasında kullanılabilir.
+Bu aşamada, kalp krizi riskini tahmin etmek için regresyon modelleri kullanılmıştır. Sonuçlar, sağlık risklerini anlamada ve önleyici tedbirlerin alınmasında kullanılabilir.

@@ -1,1 +1,1 @@
-# Sa-l-k-Durumu-ve-Kalp-Krizi-Riski-EDA-Regresyon-ve-Hipotez-Testi-Analizi
+# Health Status and Heart Attack Risk: EDA, Regression, and Hypothesis Testing Analysis

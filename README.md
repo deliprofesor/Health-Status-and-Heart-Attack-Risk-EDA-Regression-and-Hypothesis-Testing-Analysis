@@ -1,4 +1,7 @@
 # Health Status and Heart Attack Risk: EDA, Regression, and Hypothesis Testing Analysis
+
+Veri setinin boyutu büyük olduğu için githuba eklenememiştir.
+Veri seti: https://www.kaggle.com/datasets/tarekmuhammed/patients-data-for-medical-field/data
 Veri seti aşağıdaki özellikleri içermektedir:
 
 PatientID : Her hasta için benzersiz tanımlayıcı.

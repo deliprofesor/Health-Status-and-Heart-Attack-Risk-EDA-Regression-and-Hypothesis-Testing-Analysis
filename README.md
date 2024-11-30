@@ -1,8 +1,12 @@
 # Health Status and Heart Attack Risk: EDA, Regression, and Hypothesis Testing Analysis
 
+![health](https://github.com/user-attachments/assets/3c62c98f-a6f2-4591-9fe9-7a8894c418e7)
+
+
 Veri setinin boyutu büyük olduğu için githuba eklenememiştir.
 - **Veri seti: https://www.kaggle.com/datasets/tarekmuhammed/patients-data-for-medical-field/data**
 - **Repo : https://www.kaggle.com/code/lknurylmaz/sa-l-k-durumu-ve-kalp-krizi-riski-eda-regresyon**
+
   
 Veri seti aşağıdaki özellikleri içermektedir:
 

@@ -46,62 +46,43 @@ Veri seti aşağıdaki özellikleri içermektedir:
 - **HighRiskLastYear:** Indicator of whether the patient was at high risk in the last year.
 - **CovidPos:** Status of whether the patient tested positive for COVID-19.
 
-This project focuses on analyzing a comprehensive dataset related to health status and heart attack risk, using Exploratory Data Analysis (EDA), hypothesis testing, and regression techniques. The dataset includes medical and demographic features such as BMI, heart attack history, lifestyle factors (e.g., smoking, alcohol consumption), and other health conditions. The main goal is to examine relationships between these variables, especially BMI, and heart attack risk, using statistical and machine learning methods.
+This project focuses on analyzing the relationships between health conditions, lifestyle habits, and demographic factors on heart attack risk. By leveraging statistical methods and machine learning techniques, the study explores the impact of variables such as Body Mass Index (BMI), smoking, and alcohol consumption. Using a comprehensive dataset, the project aims to identify significant risk factors and provide actionable insights for mitigating heart attack risks.
 
-## Objectives of the Project
+- **Analyze the influence of lifestyle and health factors on heart attack risk.**
+- **Evaluate BMI, smoking, and alcohol consumption as predictors of heart disease.**
+- **Utilize statistical analyses and regression models to extract insights and make predictions.**
 
-## Data Cleaning and Preprocessing:
 
-- **Handling missing data.**
-- **Removing unnecessary columns.**
-- **Converting non-numeric columns to numeric values.**
-- **Ensuring that the data is clean for further analysis.**
+## Data Cleaning and Preprocessing
+
+The dataset was processed to ensure accuracy and usability:
+
+- **Missing Values:** Continuous variables were imputed using the median to maintain robustness against outliers.
+- **Irrelevant Columns:** Non-contributory fields like individual IDs were removed.
+- **Categorical Data:** Encoded into numeric values for analysis.
+- **Duplicates:** Cleaned to enhance data integrity.
   
-## Exploratory Data Analysis (EDA):
+## Exploratory Data Analysis (EDA)
 
-Using statistical measures like means, medians, and distributions to analyze the data. Visualizing the data to understand the trends, patterns, and relationships between features.
+EDA was conducted to understand the dataset's structure and identify key patterns:
 
-- **Hypothesis Testing:** Testing the relationship between BMI and heart attack incidence using t-tests to check for significant differences between the two groups (those who had a heart attack vs. those who did not).
-- **Regression Modeling:** Predicting heart attack risk based on the various factors such as BMI, age, lifestyle, and health conditions.
+- **Descriptive Statistics:** Summarized variables using measures like mean, median, and mode.
+- **Visual Analysis:** Histograms, boxplots, and heatmaps were used to assess distributions, detect outliers, and visualize correlations.
+- **Correlation Matrix:** Highlighted relationships between variables, with a focus on BMI and heart attack history.
+  
+## Hypothesis Testing
 
+Statistical tests were conducted to evaluate the relationship between BMI and heart attack risk:
 
-## 1. Data Loading and Preprocessing
+- **Null Hypothesis (H₀):** No significant difference in BMI between individuals with and without heart attacks.
+- **Alternative Hypothesis (H₁):** A significant difference exists.
+- **Test:** A two-sample t-test was performed. Results confirmed a statistically significant difference (p < 0.05), indicating BMI’s impact on heart attack risk.
+  
+## Machine Learning Models
 
-The first step involves loading the dataset and addressing issues like missing values and irrelevant columns. Numerical data is converted into a format suitable for analysis, and categorical data is encoded to allow for regression analysis. The data is cleaned and prepared for further exploration.
+Regression models were used to predict heart attack risk based on lifestyle and health factors:
 
-## 2. Selecting Variables and Computing Correlation Matrix
-
-We focus on numerical variables and compute a correlation matrix to understand the relationships between variables. Particularly, the relationship between BMI and heart attack history is analyzed. The correlation matrix helps in identifying strong and weak relationships among variables, which are essential for building predictive models.
--**Correlation Analysis:** A heatmap is used to visualize the correlation between features, showing how strongly each feature is related to others.
-
-## 3. Exploratory Data Analysis (EDA)
-
-EDA helps to understand the general distribution of the data and uncover insights. The distribution of various features (e.g., BMI, age, heart attack history) is analyzed using histograms and boxplots. Measures like mean, median, and mode are used to summarize the data. Distribution of heart attack cases and other key metrics are visualized to understand patterns.,
-
-## 4. Hypothesis Testing: BMI and Heart Attack Risk
-
-A hypothesis test is conducted to evaluate whether there is a significant difference between the BMI of people who had a heart attack and those who did not. This is done using a t-test, which compares the means of the two groups to see if any significant difference exists.
-
-- **Null Hypothesis (H₀):** There is no significant difference in BMI between people who had a heart attack and those who did not.
-- **Alternative Hypothesis (H₁):** There is a significant difference in BMI between the two groups.
-- **Test:** A two-sample t-test is performed, and the p-value is computed to assess whether the difference is statistically significant.
-
-## 5. Data Visualization
-
-Various types of visualizations are used to explore the data. Boxplots are used to visualize the distribution of BMI for people who had a heart attack versus those who did not. This helps to understand the differences in BMI between the two groups. Show the distribution of BMI, heart attack cases, and other relevant features.
-
-## 6. Regression Modeling
-
-Regression models are used to predict the risk of heart attack based on the features available in the dataset:
-
-- **Linear Regression:** A linear regression model is trained to predict heart attack risk based on various factors like BMI, age, and lifestyle choices.
-- **Performance Metrics:** The model’s performance is evaluated using metrics like Mean Squared Error (MSE) and R² Score to measure the accuracy of predictions.
-
-## Results Interpretation
-
-Hypothesis Test Results: If the t-test shows a significant difference in BMI between the two groups (those who had a heart attack vs. those who did not), this could suggest that BMI is an important factor in determining heart attack risk. Boxplots and histograms show clear differences in BMI distributions between those who had a heart attack and those who did not.
-Regression Results: The regression model provides predictions on heart attack risk, which can be used to guide health interventions and preventive measures.
-
-## Conclusion
-
-This project analyzes health data to predict heart attack risk by examining various health factors such as BMI, smoking status, and other medical conditions. By combining hypothesis testing, exploratory data analysis, and regression modeling, we gain valuable insights into how these factors contribute to heart attack risk. These findings can help healthcare providers in identifying high-risk individuals and providing targeted interventions.
+- **Linear Regression:** Served as a baseline model.
+- **Ridge Regression:** Outperformed other models with low error rates and strong generalization capabilities.
+- **Lasso Regression:** Highlighted important features but underperformed compared to Ridge Regression.
+- **Model Evaluation:** Performance was assessed using Mean Squared Error (MSE) and R² scores.

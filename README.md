@@ -45,33 +45,63 @@ Veri seti aşağıdaki özellikleri içermektedir:
 - **TetanusLast10Tdap:** Status of whether the patient received a tetanus vaccine in the last 10 years.
 - **HighRiskLastYear:** Indicator of whether the patient was at high risk in the last year.
 - **CovidPos:** Status of whether the patient tested positive for COVID-19.
+
+This project focuses on analyzing a comprehensive dataset related to health status and heart attack risk, using Exploratory Data Analysis (EDA), hypothesis testing, and regression techniques. The dataset includes medical and demographic features such as BMI, heart attack history, lifestyle factors (e.g., smoking, alcohol consumption), and other health conditions. The main goal is to examine relationships between these variables, especially BMI, and heart attack risk, using statistical and machine learning methods.
+
+## Objectives of the Project
+
+## Data Cleaning and Preprocessing:
+
+- **Handling missing data.**
+- **Removing unnecessary columns.**
+- **Converting non-numeric columns to numeric values.**
+- **Ensuring that the data is clean for further analysis.**
   
-Bu veri seti, kalp hastalığı gibi sonuçları tahmin etmek için çok önemli olan hem tıbbi geçmişi hem de sağlıkla ilgili davranışsal özellikleri içerir. Genel demografik verileri, yaşam tarzı faktörlerini ve belirli sağlık koşullarını içerir. 
+## Exploratory Data Analysis (EDA):
 
-## Veri Yükleme ve Ön İşleme
+Using statistical measures like means, medians, and distributions to analyze the data. Visualizing the data to understand the trends, patterns, and relationships between features.
 
-İlk adım olarak, veri seti yüklenmiştir ve eksik değerler, gereksiz sütunlar gibi veriyi etkileyebilecek problemler temizlenmiştir. Bu adımda verinin yapısı gözden geçirilmiş ve sayısal olmayan veriler sayısal verilere dönüştürülmüştür.
+- **Hypothesis Testing:** Testing the relationship between BMI and heart attack incidence using t-tests to check for significant differences between the two groups (those who had a heart attack vs. those who did not).
+- **Regression Modeling:** Predicting heart attack risk based on the various factors such as BMI, age, lifestyle, and health conditions.
 
-## Veri Tiplerinin Seçimi ve Korelasyon Matrisi Hesaplama
 
-Sadece sayısal veriler seçilmiş ve bu veriler arasında korelasyon hesaplanmıştır. Korelasyon matrisi, değişkenler arasındaki ilişkileri anlamamıza yardımcı olur. Özellikle, BMI ve kalp krizi gibi sağlıkla ilgili değişkenler arasındaki olası bağlantılar incelenmiştir.
-Korelasyon matrisi görselleştirilmiş ve bu görsel, sayısal özellikler arasındaki güçlü ve zayıf ilişkileri açıkça göstermiştir.
+## 1. Data Loading and Preprocessing
 
-## Keşifsel Veri Analizi (Exploratory Data Analysis - EDA)
+The first step involves loading the dataset and addressing issues like missing values and irrelevant columns. Numerical data is converted into a format suitable for analysis, and categorical data is encoded to allow for regression analysis. The data is cleaned and prepared for further exploration.
 
-EDA aşamasında, veri setinin özelliklerini anlamak için temel istatistikler ve görselleştirmeler kullanılmıştır. Dağılımlar, ortalamalar, medyanlar gibi önemli metrikler hesaplanarak veri üzerinde genel bir analiz yapılmıştır.
+## 2. Selecting Variables and Computing Correlation Matrix
 
-##  Hipotez Testi: BMI ve Kalp Krizi İlişkisi
-Hipotez testi yapılmıştır: Kalp krizi geçiren ve geçirmeyen kişilerin BMI ortalamaları arasında anlamlı bir fark olup olmadığı test edilmiştir.
-Bağımsız İki Örneklem T Testi (t-test) kullanılmıştır. Bu test, iki grup arasındaki ortalama farkının istatistiksel olarak anlamlı olup olmadığını test eder.
-T-testinin sonuçları (t-istatistiği ve p-değeri) hesaplanmış ve yorumlanmıştır.
+We focus on numerical variables and compute a correlation matrix to understand the relationships between variables. Particularly, the relationship between BMI and heart attack history is analyzed. The correlation matrix helps in identifying strong and weak relationships among variables, which are essential for building predictive models.
+-**Correlation Analysis:** A heatmap is used to visualize the correlation between features, showing how strongly each feature is related to others.
 
-##  Veri Görselleştirme
-Boxplot (kutu grafiği) ile kalp krizi geçiren ve geçirmeyen kişilerin BMI değerleri arasındaki fark görselleştirilmiştir. Bu grafik, her iki grubun BMI dağılımlarını göstererek aralarındaki olası farklılıkları görsel olarak ortaya koymuştur.
-Boxplot, özellikle gruplar arasındaki medyan, çeyrekler ve uç noktaları görselleştirerek veri hakkında daha fazla bilgi sunar.
+## 3. Exploratory Data Analysis (EDA)
 
-# Sonuçların Yorumlanması
-Hipotez testinin sonucu ve görselleştirmeler kullanılarak BMI ile kalp krizi arasındaki ilişki değerlendirilmiştir. Eğer test sonucu anlamlı bir fark tespit etmişse, bu, BMI'nin kalp krizi riskiyle ilişkili olabileceği anlamına gelir.
+EDA helps to understand the general distribution of the data and uncover insights. The distribution of various features (e.g., BMI, age, heart attack history) is analyzed using histograms and boxplots. Measures like mean, median, and mode are used to summarize the data. Distribution of heart attack cases and other key metrics are visualized to understand patterns.,
 
-# Model Geliştirme ve Sonuçların Kullanımı
-Bu aşamada, kalp krizi riskini tahmin etmek için regresyon modelleri kullanılmıştır. Sonuçlar, sağlık risklerini anlamada ve önleyici tedbirlerin alınmasında kullanılabilir.
+## 4. Hypothesis Testing: BMI and Heart Attack Risk
+
+A hypothesis test is conducted to evaluate whether there is a significant difference between the BMI of people who had a heart attack and those who did not. This is done using a t-test, which compares the means of the two groups to see if any significant difference exists.
+
+- **Null Hypothesis (H₀):** There is no significant difference in BMI between people who had a heart attack and those who did not.
+- **Alternative Hypothesis (H₁):** There is a significant difference in BMI between the two groups.
+- **Test:** A two-sample t-test is performed, and the p-value is computed to assess whether the difference is statistically significant.
+
+## 5. Data Visualization
+
+Various types of visualizations are used to explore the data. Boxplots are used to visualize the distribution of BMI for people who had a heart attack versus those who did not. This helps to understand the differences in BMI between the two groups. Show the distribution of BMI, heart attack cases, and other relevant features.
+
+## 6. Regression Modeling
+
+Regression models are used to predict the risk of heart attack based on the features available in the dataset:
+
+- **Linear Regression:** A linear regression model is trained to predict heart attack risk based on various factors like BMI, age, and lifestyle choices.
+- **Performance Metrics:** The model’s performance is evaluated using metrics like Mean Squared Error (MSE) and R² Score to measure the accuracy of predictions.
+
+## Results Interpretation
+
+Hypothesis Test Results: If the t-test shows a significant difference in BMI between the two groups (those who had a heart attack vs. those who did not), this could suggest that BMI is an important factor in determining heart attack risk. Boxplots and histograms show clear differences in BMI distributions between those who had a heart attack and those who did not.
+Regression Results: The regression model provides predictions on heart attack risk, which can be used to guide health interventions and preventive measures.
+
+## Conclusion
+
+This project analyzes health data to predict heart attack risk by examining various health factors such as BMI, smoking status, and other medical conditions. By combining hypothesis testing, exploratory data analysis, and regression modeling, we gain valuable insights into how these factors contribute to heart attack risk. These findings can help healthcare providers in identifying high-risk individuals and providing targeted interventions.

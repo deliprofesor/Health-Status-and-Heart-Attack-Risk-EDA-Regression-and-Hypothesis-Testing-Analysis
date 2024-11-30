@@ -86,3 +86,19 @@ Regression models were used to predict heart attack risk based on lifestyle and 
 - **Ridge Regression:** Outperformed other models with low error rates and strong generalization capabilities.
 - **Lasso Regression:** Highlighted important features but underperformed compared to Ridge Regression.
 - **Model Evaluation:** Performance was assessed using Mean Squared Error (MSE) and R² scores.
+
+## Results of Exploratory Data Analysis
+
+- **Higher BMI levels were associated with increased heart attack risk.**
+- **Smoking and alcohol consumption were more prevalent among individuals with a history of heart attacks.**
+- **Visualizations revealed clear differences in BMI distributions between those with and without heart attacks.**
+
+## Hypothesis Testing Outcomes
+
+The t-test confirmed a statistically significant difference in BMI levels, validating its importance as a risk factor for heart attacks.
+
+## Machine Learning Results
+- **Ridge Regression** emerged as the best predictive model, offering:
+- **Lowest Error Rates:** Demonstrated superior accuracy in predictions.
+- **Generalization:** Effectively captured relationships in the dataset.
+

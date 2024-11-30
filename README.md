@@ -2,7 +2,7 @@
 
 Veri setinin boyutu büyük olduğu için githuba eklenememiştir.
 - **Veri seti: https://www.kaggle.com/datasets/tarekmuhammed/patients-data-for-medical-field/data**
-- **repo : https://www.kaggle.com/code/lknurylmaz/sa-l-k-durumu-ve-kalp-krizi-riski-eda-regresyon**
+- **Repo : https://www.kaggle.com/code/lknurylmaz/sa-l-k-durumu-ve-kalp-krizi-riski-eda-regresyon**
   
 Veri seti aşağıdaki özellikleri içermektedir:
 
@@ -44,22 +44,25 @@ Veri seti aşağıdaki özellikleri içermektedir:
   
 Bu veri seti, kalp hastalığı gibi sonuçları tahmin etmek için çok önemli olan hem tıbbi geçmişi hem de sağlıkla ilgili davranışsal özellikleri içerir. Genel demografik verileri, yaşam tarzı faktörlerini ve belirli sağlık koşullarını içerir. 
 
-# Veri Yükleme ve Ön İşleme
+## Veri Yükleme ve Ön İşleme
+
 İlk adım olarak, veri seti yüklenmiştir ve eksik değerler, gereksiz sütunlar gibi veriyi etkileyebilecek problemler temizlenmiştir. Bu adımda verinin yapısı gözden geçirilmiş ve sayısal olmayan veriler sayısal verilere dönüştürülmüştür.
 
-# Veri Tiplerinin Seçimi ve Korelasyon Matrisi Hesaplama
+## Veri Tiplerinin Seçimi ve Korelasyon Matrisi Hesaplama
+
 Sadece sayısal veriler seçilmiş ve bu veriler arasında korelasyon hesaplanmıştır. Korelasyon matrisi, değişkenler arasındaki ilişkileri anlamamıza yardımcı olur. Özellikle, BMI ve kalp krizi gibi sağlıkla ilgili değişkenler arasındaki olası bağlantılar incelenmiştir.
 Korelasyon matrisi görselleştirilmiş ve bu görsel, sayısal özellikler arasındaki güçlü ve zayıf ilişkileri açıkça göstermiştir.
 
-# Keşifsel Veri Analizi (Exploratory Data Analysis - EDA)
+## Keşifsel Veri Analizi (Exploratory Data Analysis - EDA)
+
 EDA aşamasında, veri setinin özelliklerini anlamak için temel istatistikler ve görselleştirmeler kullanılmıştır. Dağılımlar, ortalamalar, medyanlar gibi önemli metrikler hesaplanarak veri üzerinde genel bir analiz yapılmıştır.
 
-# Hipotez Testi: BMI ve Kalp Krizi İlişkisi
+##  Hipotez Testi: BMI ve Kalp Krizi İlişkisi
 Hipotez testi yapılmıştır: Kalp krizi geçiren ve geçirmeyen kişilerin BMI ortalamaları arasında anlamlı bir fark olup olmadığı test edilmiştir.
 Bağımsız İki Örneklem T Testi (t-test) kullanılmıştır. Bu test, iki grup arasındaki ortalama farkının istatistiksel olarak anlamlı olup olmadığını test eder.
 T-testinin sonuçları (t-istatistiği ve p-değeri) hesaplanmış ve yorumlanmıştır.
 
-# Veri Görselleştirme
+##  Veri Görselleştirme
 Boxplot (kutu grafiği) ile kalp krizi geçiren ve geçirmeyen kişilerin BMI değerleri arasındaki fark görselleştirilmiştir. Bu grafik, her iki grubun BMI dağılımlarını göstererek aralarındaki olası farklılıkları görsel olarak ortaya koymuştur.
 Boxplot, özellikle gruplar arasındaki medyan, çeyrekler ve uç noktaları görselleştirerek veri hakkında daha fazla bilgi sunar.
 

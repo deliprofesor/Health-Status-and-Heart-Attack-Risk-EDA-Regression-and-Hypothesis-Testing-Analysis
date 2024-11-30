@@ -1,45 +1,47 @@
 # Health Status and Heart Attack Risk: EDA, Regression, and Hypothesis Testing Analysis
 
 Veri setinin boyutu büyük olduğu için githuba eklenememiştir.
-Veri seti: https://www.kaggle.com/datasets/tarekmuhammed/patients-data-for-medical-field/data
-repo : https://www.kaggle.com/code/lknurylmaz/sa-l-k-durumu-ve-kalp-krizi-riski-eda-regresyon
+- **Veri seti: https://www.kaggle.com/datasets/tarekmuhammed/patients-data-for-medical-field/data**
+- **repo : https://www.kaggle.com/code/lknurylmaz/sa-l-k-durumu-ve-kalp-krizi-riski-eda-regresyon**
+  
 Veri seti aşağıdaki özellikleri içermektedir:
 
-PatientID : Her hasta için benzersiz tanımlayıcı.
-Eyalet : İkamet edilen coğrafi eyalet.
-Cinsiyet : Hastanın cinsiyeti.
-GenelSağlık : Kendi bildirilen sağlık durumu.
-AgeCategory : Hastanın kategorize edilmiş yaş grubu.
-HeightInMeters : Hastanın boyu (metre cinsinden).
-WeightInKilograms : Hastanın ağırlığı (kilogram cinsinden).
-BMI : Boy ve kilo üzerinden hesaplanan Vücut Kitle İndeksi.
-Kalp Krizi Geçirdi : Hastanın kalp krizi geçirip geçirmediğinin göstergesi.
-HadAngina : Hastanın angina yaşayıp yaşamadığının göstergesi.
-HadStroke : Hastanın inme geçirip geçirmediğinin göstergesi.
-HadAsthma : Hastanın astım hastası olup olmadığının göstergesi.
-HadSkinCancer : Hastanın cilt kanseri olup olmadığının göstergesi.
-KOAH Hastalığı : Hastanın kronik obstrüktif akciğer hastalığı (KOAH) olup olmadığının göstergesi.
-HadDepressiveDisorder : Hastanın depresif bozukluk tanısı alıp almadığının göstergesi.
-Böbrek Hastalığı Vardı : Hastanın böbrek hastalığı olup olmadığının göstergesi.
-Artrit Hastalığı : Hastanın artrit olup olmadığının göstergesidir.
-HadDiabetes : Hastanın diyabet hastası olup olmadığının göstergesi.
-DeafOrHardOfHearing : İşitme kaybının göstergesi.
-BlindOrVisionDifficulty : Görme bozukluğunun göstergesi.
-Konsantrasyon Güçlüğü : Konsantrasyon güçlüğünün göstergesi.
-Yürüme Zorluğu : Yürüme zorluğunun göstergesi.
-Giyinmede veya banyo yapmada zorluk : Giyinme veya banyo yapmada zorluk göstergesi.
-DifficultyErrands : İşlerin yapılmasında yaşanan zorlukların göstergesi.
-SmokerStatus : Hastanın sigara içip içmediği durumu.
-ECigaretteUsage : E-sigara kullanımının göstergesi.
-Göğüs Taraması : Hastanın göğüs taraması yapılıp yapılmadığının göstergesi.
-IrkEtnik kökenKategori : Hastanın ırkı veya etnik kökeni.
-Alkol İçenler : Hastanın alkol tüketip tüketmediği durumu.
-HIV Testi : Hastanın HIV testi yaptırıp yaptırmadığı durumu.
-FluVaxLast12 : Hastanın son 12 ay içerisinde grip aşısı olup olmadığı durumu.
-PneumoVaxEver : Hastanın daha önce pnömokok aşısı olup olmadığı durumu.
-TetanusLast10Tdap : Hastanın son 10 yıl içerisinde tetanos aşısı yaptırıp yaptırmadığı durumu.
-HighRiskLastYear : Hastanın son bir yılda yüksek risk altında olup olmadığının göstergesi.
-CovidPos : Hastanın COVID-19 testinin pozitif olup olmadığı durumu.
+- **PatientID:** Unique identifier for each patient.
+- **State:** Geographic state of residence.
+- **Sex:** Gender of the patient.
+- **GeneralHealth:** Self-reported health status.
+- **AgeCategory:** Categorized age group of the patient.
+- **HeightInMeters:** Height of the patient (in meters).
+- **WeightInKilograms:** Weight of the patient (in kilograms).
+- **BMI:** Body Mass Index, calculated from height and weight.
+- **HadHeartAttack:** Indicator of whether the patient had a heart attack.
+- **HadAngina:** Indicator of whether the patient experienced angina.
+- **HadStroke:** Indicator of whether the patient had a stroke.
+- **HadAsthma:** Indicator of whether the patient has asthma.
+- **HadSkinCancer:** Indicator of whether the patient had skin cancer.
+- **HadCOPD:** Indicator of whether the patient had chronic obstructive pulmonary disease (COPD).
+- **HadDepressiveDisorder:** Indicator of whether the patient was diagnosed with a depressive disorder.
+- **HadKidneyDisease:** Indicator of whether the patient had kidney disease.
+- **HadArthritis:** Indicator of whether the patient had arthritis.
+- **HadDiabetes:** Indicator of whether the patient had diabetes.
+- **DeafOrHardOfHearing:** Indicator of hearing impairment.
+- **BlindOrVisionDifficulty:** Indicator of vision impairment.
+- **DifficultyConcentrating:** Indicator of concentration difficulties.
+- **DifficultyWalking:** Indicator of walking difficulties.
+- **DifficultyDressingBathing:** Indicator of difficulties in dressing or bathing.
+- **DifficultyErrands:** Indicator of difficulties in running errands.
+- **SmokerStatus:** Status of whether the patient is a smoker.
+- **ECigaretteUsage:** Indicator of e-cigarette usage.
+- **ChestScan:** Indicator of whether the patient had a chest scan.
+- **RaceEthnicityCategory:** Race or ethnicity of the patient.
+- **AlcoholDrinkers:** Status of whether the patient consumes alcohol.
+- **HIVTesting:** Status of whether the patient was tested for HIV.
+- **FluVaxLast12:** Status of whether the patient received a flu vaccine in the last 12 months.
+- **PneumoVaxEver:** Status of whether the patient ever received a pneumococcal vaccine.
+- **TetanusLast10Tdap:** Status of whether the patient received a tetanus vaccine in the last 10 years.
+- **HighRiskLastYear:** Indicator of whether the patient was at high risk in the last year.
+- **CovidPos:** Status of whether the patient tested positive for COVID-19.
+  
 Bu veri seti, kalp hastalığı gibi sonuçları tahmin etmek için çok önemli olan hem tıbbi geçmişi hem de sağlıkla ilgili davranışsal özellikleri içerir. Genel demografik verileri, yaşam tarzı faktörlerini ve belirli sağlık koşullarını içerir. 
 
 # Veri Yükleme ve Ön İşleme

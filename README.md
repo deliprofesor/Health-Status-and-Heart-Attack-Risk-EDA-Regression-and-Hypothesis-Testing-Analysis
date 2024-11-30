@@ -70,6 +70,10 @@ EDA was conducted to understand the dataset's structure and identify key pattern
 - **Visual Analysis:** Histograms, boxplots, and heatmaps were used to assess distributions, detect outliers, and visualize correlations.
 - **Correlation Matrix:** Highlighted relationships between variables, with a focus on BMI and heart attack history.
   
+https://github.com/deliprofesor/Health-Status-and-Heart-Attack-Risk-EDA-Regression-and-Hypothesis-Testing-Analysis/tree/main/graphs
+https://github.com/deliprofesor/Health-Status-and-Heart-Attack-Risk-EDA-Regression-and-Hypothesis-Testing-Analysis/tree/main/graphs
+https://github.com/deliprofesor/Health-Status-and-Heart-Attack-Risk-EDA-Regression-and-Hypothesis-Testing-Analysis/tree/main/correlation%20matrix
+  
 ## Hypothesis Testing
 
 Statistical tests were conducted to evaluate the relationship between BMI and heart attack risk:
@@ -101,4 +105,9 @@ The t-test confirmed a statistically significant difference in BMI levels, valid
 - **Ridge Regression** emerged as the best predictive model, offering:
 - **Lowest Error Rates:** Demonstrated superior accuracy in predictions.
 - **Generalization:** Effectively captured relationships in the dataset.
+
+## Conclusions
+
+- **BMI, smoking, and alcohol consumption are significant predictors of heart attack risk.**
+- **Ridge Regression is a reliable model for risk prediction and healthcare decision-making.**
 
